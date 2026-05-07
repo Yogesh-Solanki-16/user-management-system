@@ -1,0 +1,69 @@
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--border-color) 25%,
+    var(--bg-secondary) 50%,
+    var(--border-color) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-row td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.skeleton-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skeleton-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.skeleton-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skeleton-text {
+  height: 13px;
+}
+
+.skeleton-text-md {
+  width: 120px;
+}
+
+.skeleton-text-sm {
+  width: 80px;
+}
+
+.skeleton-badge {
+  width: 60px;
+  height: 22px;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.skeleton-btn {
+  width: 60px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+}

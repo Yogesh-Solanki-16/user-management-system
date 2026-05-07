@@ -1,0 +1,240 @@
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-sm);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.user-table thead {
+  background: var(--bg-secondary);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.user-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  white-space: nowrap;
+  background: var(--bg-secondary);
+}
+
+.user-table th:last-child {
+  border-right: none;
+}
+
+.user-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  color: var(--text-primary);
+  vertical-align: middle;
+  background: var(--bg-card);
+}
+
+.user-table td:last-child {
+  border-right: none;
+}
+
+.user-row {
+  transition: background-color 0.2s ease;
+}
+
+.user-row:hover td {
+  background-color: var(--bg-secondary);
+}
+
+.user-row:last-child td {
+  border-bottom: none;
+}
+
+.user-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+.user-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+/* User cell */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+}
+
+.user-avatar-wrapper {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid var(--border-color);
+}
+
+.user-avatar-fallback {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.user-name-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-fullname {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.user-age {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.user-email {
+  color: var(--text-secondary);
+}
+
+.user-phone {
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.user-company {
+  color: var(--text-secondary);
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Action buttons */
+.action-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  border: 1.5px solid transparent;
+  transition: var(--transition);
+}
+
+.action-view {
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: transparent;
+}
+.action-view:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+}
+.action-view:active {
+  transform: translateY(0);
+}
+
+.action-edit {
+  background: var(--warning-light);
+  color: #b45309;
+  border-color: transparent;
+}
+.action-edit:hover {
+  background: var(--warning);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+}
+.action-edit:active {
+  transform: translateY(0);
+}
+
+.action-delete {
+  background: var(--danger-light);
+  color: var(--danger);
+  border-color: transparent;
+}
+.action-delete:hover {
+  background: var(--danger);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
+}
+.action-delete:active {
+  transform: translateY(0);
+}
+
+/* States */
+.table-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+  gap: 12px;
+}
+
+.state-icon {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.table-state h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.table-state p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.error-state .state-icon {
+  color: var(--danger);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .action-btn span { display: none; }
+}
