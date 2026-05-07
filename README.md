@@ -17,19 +17,19 @@ A modern React-based user management application with CRUD operations, search/fi
 ## Screenshots
 
 ### Home Page
-![Home Page](/home.png)
+![Home Page](./public/home.png)
 
 ### User Table
-![User Table](/table1.png)
+![User Table](./public/table1.png)
 
 ### Add User
-![Add User](/add%20user.png)
+![Add User](./public/add%20user.png)
 
 ### Edit User
-![Edit User](/edit.png)
+![Edit User](./public/edit.png)
 
 ### View User Details
-![View User](/view.png)
+![View User](./public/view.png)
 
 ## Tech Stack
 
