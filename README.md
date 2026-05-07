@@ -14,6 +14,23 @@ A modern React-based user management application with CRUD operations, search/fi
 - Toast notifications
 - Stats dashboard
 
+## Screenshots
+
+### Home Page
+![Home Page](/home.png)
+
+### User Table
+![User Table](/table1.png)
+
+### Add User
+![Add User](/add%20user.png)
+
+### Edit User
+![Edit User](/edit.png)
+
+### View User Details
+![View User](/view.png)
+
 ## Tech Stack
 
 - React 19
